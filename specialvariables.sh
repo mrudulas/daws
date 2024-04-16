@@ -16,6 +16,16 @@ echo "Previous process id ::: $!"
 echo "Hostname ::: $HOSTNAME"
 
 
+# above are called enviornment varibles  
+
+# PATH  
+
+# $? is Exit status for the last command , 0 is success, failure otherwise
+
+# [] test expression  || && ! logical and or and not
+
+# ( ) for array declaration persons=(1,2,3)  print whole array ${persons[@]}  length ${#persons[@]}
+
 # echo "Home directory of current user: $HOME"
 # echo "Which user is running this script: $USER"
 # echo "Hostname: $HOSTNAME"
