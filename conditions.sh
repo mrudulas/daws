@@ -1,7 +1,7 @@
 #! /bin/bash
 
 read input
-if [ $input === 'hello' ]
+if [ $input -eq 'hello' ]
 then
     echo 'hello  is hereeee'
 fi    
