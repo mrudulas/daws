@@ -1,7 +1,7 @@
 echo "All variables from command line argumants ::: $@"
 echo "Number of variables from command line argumants ::: $#"
 
-echo "Current script file name  ::: $[0]"
+echo "Current script file name  ::: $0"
 
 echo "Current working directory ::: $PWD"
 echo "Home directory of current user: $HOME"
