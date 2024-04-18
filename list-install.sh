@@ -1,5 +1,8 @@
 #!/bin/bash
 USERID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPTNAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 Y="/e[33m"
 R="/e[31m"
 B="/e[32m"
