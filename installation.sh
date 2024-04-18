@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 VALIDATE(){
-    echo "Exist Status : $1"
+    echo "Exist Status : $? "
 }
 
 dnf install mysql -y
