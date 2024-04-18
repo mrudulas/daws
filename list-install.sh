@@ -1,7 +1,7 @@
 #!/bin/bash
 USERID=$(id -u)
 
-if [ USERID -ne 0]
+if [ USERID -ne 0 ]
 then echo "Please use root access to install"
   exit 1
 else echo "user has access"
@@ -11,7 +11,7 @@ for i in $@
 do  
     echo "package to install ::: $i"
     dnf list instlled $i>>$LOGFILE
-    if [ $? -ne 0]
+    if [ $? -eq 0 ]
     then
         echo -e "/e[33m $i already installed .... SKIPPING"
     else
