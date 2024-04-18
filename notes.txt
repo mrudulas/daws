@@ -1,0 +1,8 @@
+
+
+
+STPES : 
+    1. user has root access or not
+    2. SEND REQUIRED PACKAGES TO INSTALL THROUGH PARAMETERS
+    3. is package installed or not
+INSTALL_LIST("MYSQL")
