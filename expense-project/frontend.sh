@@ -24,7 +24,7 @@ else echo "user has access"
 fi
 
 VALIDATE(){
-    if [$1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo -e "$2 ......... $R FIALURE $N"
         exit 1
@@ -51,7 +51,7 @@ cd /usr/share/nginx/html &>>$LOGFILE
 unzip /tmp/frontend.zip &>>$LOGFILE
 VALIDATE $? "Extracting content"
 
-cp /etc/ec2-user/daws/expense-project/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/daws/expense-project/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "copy conf file"
 
 systemctl restart nginx &>>$LOGFILE
