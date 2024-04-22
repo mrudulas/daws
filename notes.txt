@@ -1,8 +1,15 @@
 
 
+redirect to log file using below:
+
+1>$LOGFILE  for success always override existing log
+1>$LOGFILE  for success always append to existing log
+
+&>>$LOGFILE  for both success and failure
+1>>$LOGFILE  for success
+2>>$LOGFILE  for failure
 
 STPES : 
     1. user has root access or not
     2. SEND REQUIRED PACKAGES TO INSTALL THROUGH PARAMETERS
     3. is package installed or not
-INSTALL_LIST("MYSQL")
