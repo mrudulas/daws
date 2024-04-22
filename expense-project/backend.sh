@@ -65,8 +65,11 @@ npm install &>>$LOGFILE &>>$LOGFILE
 cp /home/ec2-user/daws/expense-project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 
 systemctl daemon-reload &>>$LOGFILE
+VALIDATE $? "daemon reloadt"
 systemctl start backend &>>$LOGFILE
+VALIDATE $? "start backend"
 systemctl enable backend &>>$LOGFILE
+VALIDATE $? "enale backend"
 
 
 dnf install mysql -y &>>$LOGFILE
