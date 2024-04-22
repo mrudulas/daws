@@ -23,7 +23,7 @@ else echo "user has access"
 fi
 
 VALIDATE(){
-    if [$1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo -e "$2 ......... $R FIALURE $N"
         exit 1
@@ -62,7 +62,7 @@ unzip /tmp/backend.zip &>>$LOGFILE
 
 npm install &>>$LOGFILE &>>$LOGFILE
 
-copy /home/ec2-user/daws/expense-project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/daws/expense-project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 
 systemctl daemon-reload &>>$LOGFILE
 systemctl start backend &>>$LOGFILE
