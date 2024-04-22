@@ -32,7 +32,7 @@ VALIDATE(){
     fi
 }
 
-dnf module disable nodejs -y &>>$LOGFILE
+dnf module disable nodejs -y &>>$ 
 VALIDATE $? "disabling nodejs version................."
 
 dnf module enable nodejs:20 -y &>>$LOGFILE
@@ -62,7 +62,7 @@ unzip /tmp/backend.zip &>>$LOGFILE
 
 npm install &>>$LOGFILE &>>$LOGFILE
 
-copy /home/ec2-user/expense-project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+copy /home/ec2-user/daws/expense-project/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 
 systemctl daemon-reload &>>$LOGFILE
 systemctl start backend &>>$LOGFILE
