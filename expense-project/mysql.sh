@@ -1,6 +1,6 @@
 source ./common.sh
 
-check_root()
+check_root
 
 echo "Please enter DB password:"
 # enter abc123 as password
