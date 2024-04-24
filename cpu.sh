@@ -9,7 +9,7 @@ THRESHOLD=0.1
 MESSAGE=""
 
 while IFS= read -r process
-do
+do 
 echo $(echo $process | awk -F " " '{print $(NF-1)}')
 USAGE=$(echo $process | awk -F " " '{print $(NF-1)}')
 PROCESSNAME=$(echo $process | awk -F " " '{print $3F}')
