@@ -12,7 +12,7 @@ echo "total words: $totalwords"
 
 
 read -a WORDS -d " " < example.txt
-for word in "${WORDS[@]}"
+for word in "${WORDS}"
 do 
     echo $word
 done
