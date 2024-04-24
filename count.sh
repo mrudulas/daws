@@ -18,6 +18,7 @@ do
  then
             # Increment the count of the word in the associative array
     ((word_count["$word"]++))
+    echo "word $word and count $word_count["$word"]"
  fi
 done
 counter=0
