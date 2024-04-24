@@ -10,7 +10,7 @@ MESSAGE=""
 
 while IFS= read -r process
 do
-echo $process
+echo $(echo $process | awk -F " " '{print $(NF-1)}')
 USAGE=$(echo $process | awk -F " " '{print $(NF-1)}')
 PROCESSNAME=$(echo $process | awk -F " " '{print $3F}')
 MESSAGE+="$PROCESSNAME is running with $USAGE, Threshold is $THRESHOLD \n"
