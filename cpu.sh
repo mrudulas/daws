@@ -11,7 +11,7 @@ MESSAGE=""
 while IFS= read -r process
 do
 echo $process
-USAGE=$(echo $process | awk -F " " '{print $4F}')
+USAGE=$(echo $process | awk -F " " '{print awk -F " " '{print $4F}'}')
 PROCESSNAME=$(echo $process | awk -F " " '{print $3F}')
 MESSAGE+="$PROCESSNAME is running with $USAGE, Threshold is $THRESHOLD \n"
 done <<< $PROCESSLIST
