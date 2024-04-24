@@ -11,7 +11,7 @@ totalwords=$(wc -w < example.txt)
 echo "total words: $totalwords"
 
 
-read -a WORDS -d " " < example.txt
+read -a WORDS -d "" < example.txt
 for word in "${WORDS}"
 do 
     echo $word
