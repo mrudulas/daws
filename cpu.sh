@@ -11,6 +11,6 @@ MESSAGE=""
 while IFS= read -r process
 do
 echo $process
-# USAGE=$(echo $process | awk -F " " 'print $4F}')
-# echo $USAGE
+USAGE=$(echo $process | awk -F " " '{print $4F}')
+echo $USAGE
 done <<< $PROCESSLIST
