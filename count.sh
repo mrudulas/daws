@@ -17,7 +17,7 @@ do
  if [ -n "$word" ]
  then
             # Increment the count of the word in the associative array
-            ((word_count["$word"]++))
+    ((word_count["$word"]++))
  fi
 done
 counter=0
