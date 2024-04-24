@@ -25,3 +25,5 @@ wordfreq() {
    END 
    { for (w in words) printf("%3d %s\n", words[w], w) } ' | sort -rn; 
 }
+
+cat example.txt | wordfreq
