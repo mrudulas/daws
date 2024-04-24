@@ -7,3 +7,5 @@ done < example.txt
 
 file="example.txt"
 totalwords=$(wc -w < example.txt)
+
+echo "total words: $totalwords"
